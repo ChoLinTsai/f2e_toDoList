@@ -1,0 +1,34 @@
+$navHeight: 76px;
+
+.navBarBlock {
+  display: block;
+ 
+  .nav-extended {
+    background: #4A90E2;
+    height: $navHeight;
+    box-shadow: none;
+
+    .nav-content {
+      height: $navHeight;
+      .tabs {
+        @include flex;
+        height: $navHeight;
+
+        .indicator {
+          height: 5px;
+          background: #00408B;
+        }
+
+        .tab {
+          height: $navHeight;
+          margin: 0 50px;
+          a {
+            @include flex;
+            font-size: 24px;
+            text-transform: none;
+          }
+        }
+      }
+    }
+  }
+}

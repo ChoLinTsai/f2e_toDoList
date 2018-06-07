@@ -1,0 +1,41 @@
+.sectionTasks {
+  width: 100vw;
+  height: 1000px;
+  
+
+  .container {
+    @include flex;
+    
+    .tasksBlock {
+      width: 620px;
+      height: 520px;
+      box-shadow: 0 4px 4px #C8C8C8;
+      background: #F2F2F2;
+      border-radius: 5px 5px 0 0;
+
+      .collapsible {
+        margin: 0;
+        border: none;
+        box-shadow: none;
+
+        li {
+
+          .collapsible-header {
+            width: 100%;
+            height: 76px;
+            background: #F2F2F2;
+            display: grid;
+            grid-template-columns:
+              [c1] 2rem [c2] 1fr [c3] 1fr
+              [c4] 1fr [c5] 1fr [c6];
+            grid-template-rows: 1fr;
+            
+          }
+
+
+        }
+      }
+    }
+  }
+    
+}
