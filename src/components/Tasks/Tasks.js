@@ -2,16 +2,18 @@ import React, { Component } from 'react';
 import './tasks.scss';
 import { 
   Container,
-  Collapsible,
-  Row,
-  Input } from 'react-materialize';
+  Collapsible, } from 'react-materialize';
+
+import TaskContent from './TaskContent/TaskContent.js';
+import TaskContentFooter from './TaskContentFooter/TaskContentFooter.js';
+import TaskLists from './TaskLists/TaskLists.js';
 
 export default class Tasks extends Component {
   constructor(props) {
     super(props);
     this.state = {  };
   }
-
+  
   render() {
     return (
 
@@ -22,14 +24,15 @@ export default class Tasks extends Component {
             <Collapsible>
               <li>
                 <div className="collapsible-header">
-
                   <div className="checkboxWrapper">
+
                     <div className="row">
                       <div className="col">
-                        <input id="input_1" type="checkbox"/>
-                        <label htmlFor="input_1"></label>
+                        <input id="taskBlockCheckBox" type="checkbox"/>
+                        <label htmlFor="taskBlockCheckBox"></label>
                       </div>
                     </div>
+
                   </div>
 
                   <div className="taskTitleWrapper">
@@ -48,7 +51,9 @@ export default class Tasks extends Component {
 
                   <div className="taskIconWrapper">
                     <div className="row">
-                      <i className="material-icons iconStar">star_border</i>
+                      <i className="material-icons iconStar">
+                        star_border
+                      </i>
                     </div>
                     
                     <i className="material-icons iconEdit">create</i>
@@ -58,43 +63,20 @@ export default class Tasks extends Component {
 
                 <div className="collapsible-body">
 
-                  <div className="taskContent">
-                    <div className="deadlineBlock">
-                      <div className="deadlineTitle">
-                        <i className="material-icons iconDate">
-                          date_range
-                        </i>
-                        <h6>Deadline</h6>
-                      </div>
+                  <TaskContent />
+                  <TaskContentFooter />
 
-                      <div className="deadlineDateTime">
-
-                        <div className="inputDateBlock">
-                          <Input s={6} placeholder="yyyy/mm/dd"
-                            className="inputDate"
-                            label="Enter a Date" />
-                        </div>
-
-                        <div className="inputTimeBlock">
-                          <Input s={6} placeholder="hh:mm"
-                              className="inputTime"
-                              label="Enter a Time/24hrs" />
-                        </div>
-
-                      </div>
-                    </div>
-                    <div className="fileBlock"></div>
-                    <div className="commentBlock"></div>
-                  </div>
-
-                  <div className="taskContentFooter">
-                  </div>
                 </div>
 
               </li>
 
             </Collapsible>
+
+            <TaskLists />
+
           </div>
+
+          
 
         </Container>
       </div>
