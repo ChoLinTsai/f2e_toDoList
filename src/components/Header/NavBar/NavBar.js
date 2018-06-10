@@ -14,13 +14,13 @@ export default class Navigation extends Component {
 
           <Navbar brand="">
             <li className="navMyTasks">
-              <Link to="/">My Tasks</Link>
+              <Link to="/f2e_toDoList/">My Tasks</Link>
             </li>
             <li className="nav-inProgress">
-              <Link to="/inprogress">In Progress</Link>
+              <Link to="/f2e_toDoList/inprogress">In Progress</Link>
             </li>
             <li className="nav-done">
-              <Link to="/done">Done</Link>
+              <Link to="/f2e_toDoList/done">Done</Link>
             </li>
           </Navbar>
 
