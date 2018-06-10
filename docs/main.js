@@ -10636,9 +10636,10 @@ var Index = function (_Component) {
           _react2.default.createElement(
             _reactRouterDom.Switch,
             null,
-            _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _Tasks2.default, exact: true }),
-            _react2.default.createElement(_reactRouterDom.Route, { path: '/inprogress', component: _Inprogress2.default }),
-            _react2.default.createElement(_reactRouterDom.Route, { path: '/done', component: _Done2.default }),
+            _react2.default.createElement(_reactRouterDom.Route, { path: '/f2e_toDoList/', component: _Tasks2.default }),
+            _react2.default.createElement(_reactRouterDom.Route, { path: '/f2e_toDoList/inprogress',
+              component: _Inprogress2.default }),
+            _react2.default.createElement(_reactRouterDom.Route, { path: '/f2e_toDoList/done', component: _Done2.default }),
             _react2.default.createElement(_reactRouterDom.Route, { component: _Error2.default })
           )
         )
