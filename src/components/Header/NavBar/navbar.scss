@@ -3,29 +3,47 @@ $navHeight: 76px;
 .navBarBlock {
   display: block;
  
-  .nav-extended {
+  nav {
     background: #4A90E2;
     height: $navHeight;
     box-shadow: none;
+    @include flex;
 
-    .nav-content {
-      height: $navHeight;
-      .tabs {
-        @include flex;
-        height: $navHeight;
+    .nav-wrapper {
+      width: 620px;
 
-        .indicator {
-          height: 5px;
-          background: #00408B;
+      div {
+        ul {
+          @include flex(space-between);
+
+          li {
+            a {
+              @include flex;
+              height: $navHeight;
+              font-size: 2rem;
+            }
+          }
         }
+      }
+    }
+  }
+}
 
-        .tab {
-          height: $navHeight;
-          margin: 0 50px;
-          a {
-            @include flex;
-            font-size: 24px;
-            text-transform: none;
+@media screen and (max-width: 994px) {
+  .navBarBlock {
+    nav {
+      .nav-wrapper {
+        div {
+          ul {
+            @include flex(flex-start, flex-end);
+            flex-direction: column;
+            li {
+              a {
+                @include flex;
+                height: $navHeight;
+                font-size: 2rem;
+              }
+            }
           }
         }
       }

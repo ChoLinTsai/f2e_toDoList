@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './header.scss';
-
-import NavBar from './NavBar/NavBar.js'
+import Navigation from './NavBar/NavBar.js'
 
 export default class Header extends Component {
 
@@ -9,7 +8,7 @@ export default class Header extends Component {
     return(
       <div className="headerBlock">
 
-        <NavBar />
+        <Navigation />
         
       </div>
     )
