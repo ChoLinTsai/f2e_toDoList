@@ -13,14 +13,17 @@ export default class Navigation extends Component {
         <Container>
 
           <Navbar brand="">
-            <BrowserRouter basename={process.env.PUBLIC_URL}/>
+            
             <li className="navMyTasks">
+              <BrowserRouter basename={process.env.PUBLIC_URL}/>
               <Link to="/f2e_toDoList/">My Tasks</Link>
             </li>
             <li className="nav-inProgress">
+              <BrowserRouter basename={process.env.PUBLIC_URL}/>
               <Link to="/f2e_toDoList/inprogress">In Progress</Link>
             </li>
             <li className="nav-done">
+              <BrowserRouter basename={process.env.PUBLIC_URL}/>
               <Link to="/f2e_toDoList/done">Done</Link>
             </li>
           </Navbar>

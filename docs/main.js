@@ -10029,10 +10029,10 @@ var Navigation = function (_Component) {
           _react2.default.createElement(
             _reactMaterialize.Navbar,
             { brand: '' },
-            _react2.default.createElement(BrowserRouter, { basename: process.env.PUBLIC_URL }),
             _react2.default.createElement(
               'li',
               { className: 'navMyTasks' },
+              _react2.default.createElement(BrowserRouter, { basename: process.env.PUBLIC_URL }),
               _react2.default.createElement(
                 _reactRouterDom.Link,
                 { to: '/f2e_toDoList/' },
@@ -10042,6 +10042,7 @@ var Navigation = function (_Component) {
             _react2.default.createElement(
               'li',
               { className: 'nav-inProgress' },
+              _react2.default.createElement(BrowserRouter, { basename: process.env.PUBLIC_URL }),
               _react2.default.createElement(
                 _reactRouterDom.Link,
                 { to: '/f2e_toDoList/inprogress' },
@@ -10051,6 +10052,7 @@ var Navigation = function (_Component) {
             _react2.default.createElement(
               'li',
               { className: 'nav-done' },
+              _react2.default.createElement(BrowserRouter, { basename: process.env.PUBLIC_URL }),
               _react2.default.createElement(
                 _reactRouterDom.Link,
                 { to: '/f2e_toDoList/done' },
