@@ -9844,7 +9844,7 @@ var Navigation = function (_Component) {
               { className: 'navMyTasks' },
               _react2.default.createElement(
                 _reactRouterDom.Link,
-                { to: '/' },
+                { to: '/f2e_toDoList/' },
                 'My Tasks'
               )
             ),
@@ -9853,7 +9853,7 @@ var Navigation = function (_Component) {
               { className: 'nav-inProgress' },
               _react2.default.createElement(
                 _reactRouterDom.Link,
-                { to: '/inprogress' },
+                { to: '/f2e_toDoList/inprogress' },
                 'In Progress'
               )
             ),
@@ -9862,7 +9862,7 @@ var Navigation = function (_Component) {
               { className: 'nav-done' },
               _react2.default.createElement(
                 _reactRouterDom.Link,
-                { to: '/done' },
+                { to: '/f2e_toDoList/done' },
                 'Done'
               )
             )
