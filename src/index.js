@@ -20,7 +20,7 @@ class Index extends Component {
         <div>
           <Header />
           <Switch>
-            <Route path="/f2e_toDoList/" component={Tasks} />
+            <Route path="/f2e_toDoList/" component={Tasks} exact />
             <Route path="/f2e_toDoList/inprogress"
               component={Inprogress} />
             <Route path="/f2e_toDoList/done" component={Done} />
